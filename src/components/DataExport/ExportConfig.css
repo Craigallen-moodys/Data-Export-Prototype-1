@@ -1,0 +1,72 @@
+.export-config {
+  padding: 30px;
+  max-width: 1200px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.config-sections {
+  background-color: white;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.preview-section {
+  background-color: white;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.preview-table-container {
+  overflow-x: auto;
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.preview-table thead {
+  background-color: #f8f9fa;
+}
+
+.preview-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.preview-table td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  color: #555;
+}
+
+.preview-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.preview-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.export-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+

@@ -1,0 +1,23 @@
+.export-button {
+  background-color: #1a3a5c;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.export-button:hover:not(:disabled) {
+  background-color: #2a4a6c;
+}
+
+.export-button:active:not(:disabled) {
+  background-color: #0a2a4c;
+}
+
+.export-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

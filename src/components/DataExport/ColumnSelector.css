@@ -1,0 +1,29 @@
+.column-selector {
+  margin-bottom: 30px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #1a3a5c;
+}
+
+.checkbox-option:hover {
+  color: #1a3a5c;
+}
+

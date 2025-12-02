@@ -1,0 +1,29 @@
+.status-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-pill--in-progress {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.status-pill--pending {
+  background-color: #5dade2;
+  color: white;
+}
+
+.status-pill--failed {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status-pill--completed {
+  background-color: #2ecc71;
+  color: white;
+}
+
