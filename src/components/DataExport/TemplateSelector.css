@@ -1,0 +1,109 @@
+.template-selector {
+  margin-bottom: 30px;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.template-card {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.template-card:hover {
+  border-color: #1a3a5c;
+  box-shadow: 0 2px 8px rgba(26, 58, 92, 0.15);
+}
+
+.template-card--selected {
+  border-color: #1a3a5c;
+  background-color: #f0f4f8;
+  box-shadow: 0 2px 8px rgba(26, 58, 92, 0.2);
+}
+
+.template-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.template-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.template-badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.template-badge--banking {
+  background-color: #3498db;
+  color: white;
+}
+
+.template-badge--government {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.template-badge--corporate {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.template-badge--custom {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.template-description {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.template-details {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #888;
+}
+
+.template-detail {
+  display: flex;
+  align-items: center;
+}
+
+.template-clear-btn {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.template-clear-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+

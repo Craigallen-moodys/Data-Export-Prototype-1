@@ -1,6 +1,23 @@
-import { DataRecord, AggregatedRecord } from '../types';
+import { DataRecord, AggregatedRecord, DateRange } from '../types';
 
-export function aggregateDaily(data: DataRecord[]): AggregatedRecord[] {
+export function filterByDateRange(data: DataRecord[], dateRange?: DateRange): DataRecord[] {
+  if (!dateRange) {
+    return data;
+  }
+
+  const startDate = new Date(dateRange.startDate);
+  const endDate = new Date(dateRange.endDate);
+  // Set end date to end of day
+  endDate.setHours(23, 59, 59, 999);
+
+  return data.filter(record => {
+    const recordDate = new Date(record.date);
+    return recordDate >= startDate && recordDate <= endDate;
+  });
+}
+
+export function aggregateDaily(data: DataRecord[], dateRange?: DateRange): AggregatedRecord[] {
+  const filteredData = filterByDateRange(data, dateRange);
   const groupedByDate = new Map<string, DataRecord[]>();
 
   // Group records by date (YYYY-MM-DD)

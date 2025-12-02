@@ -1,0 +1,49 @@
+.date-range-selector {
+  margin-bottom: 30px;
+}
+
+.date-range-inputs {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.date-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.date-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.date-input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #1a3a5c;
+  box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.1);
+}
+
+.date-separator {
+  font-size: 14px;
+  color: #666;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+

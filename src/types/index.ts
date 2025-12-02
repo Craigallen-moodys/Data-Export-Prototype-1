@@ -17,8 +17,24 @@ export interface AggregatedRecord {
 
 export type ExportType = 'daily' | 'weekly' | 'monthly';
 
+export interface DateRange {
+  startDate: string; // YYYY-MM-DD format
+  endDate: string;   // YYYY-MM-DD format
+}
+
 export interface ExportConfig {
   exportType: ExportType;
   selectedColumns: string[];
+  templateId?: string;
+  dateRange?: DateRange;
+}
+
+export interface ExportTemplate {
+  id: string;
+  name: string;
+  description: string;
+  exportType: ExportType;
+  selectedColumns: string[];
+  clientType: 'banking' | 'government' | 'corporate' | 'custom';
 }
 
